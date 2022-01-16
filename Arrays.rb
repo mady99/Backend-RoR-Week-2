@@ -16,17 +16,23 @@ while  i < arr.length
   i =i+1
 end
 puts mult
+
 puts "####################"
 p "B"
 arr = [1,2,3,4,5]
 p "please insert value to check"
-x = gets.to_i
-p arr.include? (x)
+p arr.include? (8)
+
 puts "####################"
 p "C"
-arr = [1,1,2,2,3,3,3]
-i = 1
-ct = 0
+arr = [1,1,2,2,3,3,3,4,4,5,5,5,5,5,5]
+p newarr = arr.uniq
+w = 0
+for w in newarr do
+  puts "element  " + newarr[w].to_s
+  puts "Count  " + arr.count(newarr[w]).to_s
+end
+
 puts "####################"
 p "D"
 arr = [1,2,3,4,5]
@@ -36,10 +42,12 @@ puts "Iterator"
 sum = 0
 arr.each do |s| sum = sum + s end
   puts sum 
+
 puts "####################"
 p "E"
 arr = [1,1,2,2,3,3,3]
 p arr.uniq
+
 puts "####################"
 p "F"
 arr = [1,2,3,4,5,6,7,8]
@@ -47,12 +55,14 @@ arr2 = Array.new(2)
 arr2[0] = arr[(arr.length/2)-1]
 arr2[1] = arr[arr.length/2]
 puts arr2
+
 puts "#####################"
 p "G"
 arr = [1,2,3,4,5]
 if arr.length.odd?
   puts arr.sum
 end
+
 puts "#####################"
 p "H"
 arr = [1,3,8,15,17,18,55,99]
@@ -68,6 +78,7 @@ while i < arr.length
 end
 p sum
 puts 0 if arr.empty?
+
 puts "######################"
 p "I"
 arr = [1,1,1,1,1,1,1,1]
@@ -82,6 +93,7 @@ while i < arr.length
   i += 1
 end
 puts true if check == 1
+
 puts "########################"
 p "J"
 arr = [["A","B","C"], ["D","E","F"]]
