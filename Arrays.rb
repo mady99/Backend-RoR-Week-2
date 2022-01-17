@@ -26,13 +26,12 @@ p arr.include? (8)
 puts "####################"
 p "C"
 arr = [1,1,2,2,3,3,3,4,4,5,5,5,5,5,5]
-p newarr = arr.uniq
-w = 0
+newarr = arr.uniq
+outputArr = Array.new
 for w in newarr do
-  puts "element  " + newarr[w].to_s
-  puts "Count  " + arr.count(newarr[w]).to_s
+  outputArr.append("[" + w.to_s + "]" + "[" + arr.count(w).to_s + "]")
 end
-
+puts outputArr
 puts "####################"
 p "D"
 arr = [1,2,3,4,5]
