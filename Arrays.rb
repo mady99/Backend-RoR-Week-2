@@ -77,8 +77,6 @@ while i < arr.length
   i+=1
 end
 p sum
-puts 0 if arr.empty?
-
 puts "######################"
 p "I"
 arr = [1,1,1,1,1,1,1,1]
