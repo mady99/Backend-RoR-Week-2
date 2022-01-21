@@ -46,9 +46,10 @@ puts"###########################"
 p "B                        "
 arr = [10,20,30,40,10,10,20]
 newarr = arr.uniq
+hash = Hash.new
 i = 0
 while i < newarr.length
-  puts "element  ",newarr[i]
-  puts "count  "; puts arr.count (newarr[i])
+  hash.store(newarr[i],arr.count(newarr[i]))
   i += 1
 end
+puts hash
