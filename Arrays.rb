@@ -31,7 +31,7 @@ outputArr = Array.new
 for w in newarr do
   outputArr.append("[" + w.to_s + "]" + "[" + arr.count(w).to_s + "]")
 end
-puts outputArr
+puts outputArr.to_s
 puts "####################"
 p "D"
 arr = [1,2,3,4,5]
